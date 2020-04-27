@@ -122,27 +122,21 @@ TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
 TW_NO_SCREEN_TIMEOUT := true
 
-# Path of your SHRP Tree
+#SHRP-specific lines
+
 SHRP_PATH := device/xiaomi/ginkgo
-# Maintainer name
 SHRP_MAINTAINER := smxdfx
-# Device codename
 SHRP_DEVICE_CODE := willow
-# put this 0 if device has no EDL mode
-SHRP_EDL_MODE := 1
+SHRP_EDL_MODE := 0
 SHRP_EXTERNAL := /external_sd
 SHRP_INTERNAL := /sdcard
 SHRP_OTG := /usb_otg
-# Put 0 to disable flashlight
 SHRP_FLASH := 1
-# These are led paths, find yours then put here (Optional)
 SHRP_CUSTOM_FLASHLIGHT := true
 SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
 SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
 SHRP_FONP_3 := /sys/class/leds/flashlight/brightness
-# Max Brightness of LED (Optional)
 SHRP_FLASH_MAX_BRIGHTNESS := 200
-# Check your device's recovery path, dont use blindly
 SHRP_REC := /dev/block/bootdevice/by-name/recovery
 SHRP_REC_TYPE := SAR
 SHRP_DEVICE_TYPE := A_Only
